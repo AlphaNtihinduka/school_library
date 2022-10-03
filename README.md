@@ -1,7 +1,7 @@
-# ruby_template
+# school_library
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This is ruby template
+> This is a school library
 
 
 ## Built With
