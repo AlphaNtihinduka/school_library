@@ -5,7 +5,7 @@ class Main
         @app = App.new
     end
 
-    def main
+    def home_menu
         puts "\nWelcome to OOP school Library App!!\n"
         print_menu
     end
@@ -50,4 +50,4 @@ end
 end
 
 main = Main.new
-main.main
+main.home_menu
