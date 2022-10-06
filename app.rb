@@ -17,7 +17,7 @@ class App
             puts 'The book Library has no books'
         else
             puts 'List of all books'
-            @books.each {|book| puts "Title: \"#{book.title}\", Author: #{book.author}" }
+            @books.each {|book| puts "Title: #{book.title}, Author: #{book.author}" }
     
         end
     end
@@ -26,8 +26,8 @@ class App
         if @persons.empty?
             puts 'The book Library has no books'
         else
-            puts 'List of all books'
-            @persons.each {|person| puts "[#{person.class}], Name: #{person.name}, ID: #{person.id}} Age: #{person.age}"}
+            puts 'List of all people'
+            @persons.each {|person| puts "[#{person.class}], Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"}
         end
     end
 
@@ -50,7 +50,7 @@ class App
         age = gets.chomp.to_i
         print 'Specialization: '
         specialization = gets.chomp
-        @persons << Teacher.new(specialization, age, name)
+        @persons << Teacher.new(name, age, specialization)
         puts "Person created successfully\n"
     end
 
@@ -97,7 +97,7 @@ class App
         puts "Rentals list"
         @rentals.each do |rental|
             if rental.person.id.to_s == person_id
-            puts "Date: #{rental.date}, Book: \"#{rental.book.title}\" by: #{rental.person}"
+            puts "Date: #{rental.date}, Book: \"#{rental.book.title}\" by: #{rental.person.name}"
             end
         end
     end
