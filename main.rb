@@ -39,7 +39,7 @@ class Main
   end
 
   def user_input
-    input = gets.chomp.to_i
+    input = gets.chomp
     while input > 7 || input < 1
       puts 'Invalid option entered '
       input = gets.chomp.to_i
