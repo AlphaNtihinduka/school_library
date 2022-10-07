@@ -2,9 +2,9 @@ require './person'
 
 # inherite Person class
 class Teacher < Person
-  attr_accessor :specialization
+  attr_accessor :specialization, :parent_permission
 
-  def initialize(specialization, age, name, _parent_permission)
+  def initialize(name, age, specialization)
     @specialization = specialization
     super(age, name, parent_permission: true)
   end
