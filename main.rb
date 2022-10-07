@@ -10,7 +10,7 @@ class Main
     print_menu
   end
 
-  def print_menu
+  def print_menu # rubocop:disable Metrics/CyclomaticComplexity
     options
     loop do
       input = user_input
