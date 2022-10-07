@@ -87,10 +87,6 @@ class App
     @persons.each_with_index do |person, index|
       puts "#{index} [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
-    rental_array(book_number)
-  end
-
-  def rental_array(book_number)
     person_number = gets.chomp.to_i
     print 'Date(dd-mm-yy): '
     date = gets.chomp

@@ -27,7 +27,7 @@ class Main
     end
   end
 
-  def options # rubocop:disable Metrics/CyclomaticComplexity
+  def options
     puts '\nPlease choose an option by entering a number:\n'
     puts '1- List all the Books.'
     puts '2- List all the people.'
